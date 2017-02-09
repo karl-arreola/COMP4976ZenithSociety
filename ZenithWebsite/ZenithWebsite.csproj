@@ -205,9 +205,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Controllers\AccountViewModels.cs" />
-    <Compile Include="Migrations\ZenithMigrations\201702091951223_FirstMigrations.cs" />
-    <Compile Include="Migrations\ZenithMigrations\201702091951223_FirstMigrations.Designer.cs">
-      <DependentUpon>201702091951223_FirstMigrations.cs</DependentUpon>
+    <Compile Include="Migrations\ZenithMigrations\201702092244562_FirstMigrations.cs" />
+    <Compile Include="Migrations\ZenithMigrations\201702092244562_FirstMigrations.Designer.cs">
+      <DependentUpon>201702092244562_FirstMigrations.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\ZenithMigrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -285,11 +285,6 @@
     <Content Include="Views\Events\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\ZenithMigrations\201702091951223_FirstMigrations.resx">
-      <DependentUpon>201702091951223_FirstMigrations.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
@@ -305,6 +300,11 @@
       <Project>{3B06E0CC-0AB5-4615-AED8-BADA4BC142BC}</Project>
       <Name>ZenithClassLib</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\ZenithMigrations\201702092244562_FirstMigrations.resx">
+      <DependentUpon>201702092244562_FirstMigrations.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

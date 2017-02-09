@@ -13,7 +13,7 @@ namespace ZenithWebsite.Migrations.ZenithMigrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201702091951223_FirstMigrations"; }
+            get { return "201702092244562_FirstMigrations"; }
         }
         
         string IMigrationMetadata.Source

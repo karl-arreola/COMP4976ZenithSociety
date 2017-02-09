@@ -38,10 +38,22 @@ namespace ZenithWebsite.Migrations.ZenithMigrations
         {
             var events = new List<Event>()
             {
-                new Event { DateFrom = new DateTime(2017, 2, 11, 9, 0, 0), DateTo = new DateTime(2017, 2, 11, 12, 0, 0), EventMadeBy = "Joe",
-                    IsActive = false, CreationDate = context.Activity.FirstOrDefault(c => c.ActivityDescription ==  "Ski Tournament").CreationDate},
-                new Event { DateFrom = new DateTime(2017, 2, 11, 14, 0, 0), DateTo = new DateTime(2017, 2, 11, 17, 0, 0), EventMadeBy = "Sam",
-                    IsActive = false, CreationDate = context.Activity.FirstOrDefault(c => c.ActivityDescription ==  "Triathalon").CreationDate}
+                new Event
+                { DateFrom = new DateTime(2017, 2, 11, 9, 0, 0),
+                    DateTo = new DateTime(2017, 2, 11, 12, 0, 0),
+                    EventMadeBy = "Joe",
+                    IsActive = false,
+                    ActivityId = context.Activity.FirstOrDefault(c => c.ActivityDescription ==  "Ski Tournament").ActivityId,
+                    CreationDate = context.Activity.FirstOrDefault(c => c.ActivityDescription ==  "Ski Tournament").CreationDate
+                },
+                new Event
+                { DateFrom = new DateTime(2017, 2, 11, 14, 0, 0),
+                    DateTo = new DateTime(2017, 2, 11, 17, 0, 0),
+                    EventMadeBy = "Sam",
+                    IsActive = false,
+                    ActivityId = context.Activity.FirstOrDefault(c => c.ActivityDescription ==  "Triathalon").ActivityId,
+                    CreationDate = context.Activity.FirstOrDefault(c => c.ActivityDescription ==  "Triathalon").CreationDate
+                }
             };
 
             return events.ToArray();

@@ -26,12 +26,12 @@ namespace ZenithWebsite.Migrations.ZenithMigrations
                         DateTo = c.DateTime(nullable: false),
                         EventMadeBy = c.String(),
                         IsActive = c.Boolean(nullable: false),
+                        ActivityId = c.Int(nullable: false),
                         CreationDate = c.DateTime(nullable: false),
-                        activity_ActivityId = c.Int(),
                     })
                 .PrimaryKey(t => t.EventId)
-                .ForeignKey("dbo.Activities", t => t.activity_ActivityId)
-                .Index(t => t.activity_ActivityId);
+                .ForeignKey("dbo.Activities", t => t.ActivityId, cascadeDelete: true)
+                .Index(t => t.ActivityId);
             
             CreateTable(
                 "dbo.AspNetRoles",
@@ -109,14 +109,14 @@ namespace ZenithWebsite.Migrations.ZenithMigrations
             DropForeignKey("dbo.AspNetUserLogins", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserClaims", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserRoles", "RoleId", "dbo.AspNetRoles");
-            DropForeignKey("dbo.Events", "activity_ActivityId", "dbo.Activities");
+            DropForeignKey("dbo.Events", "ActivityId", "dbo.Activities");
             DropIndex("dbo.AspNetUserLogins", new[] { "UserId" });
             DropIndex("dbo.AspNetUserClaims", new[] { "UserId" });
             DropIndex("dbo.AspNetUsers", "UserNameIndex");
             DropIndex("dbo.AspNetUserRoles", new[] { "RoleId" });
             DropIndex("dbo.AspNetUserRoles", new[] { "UserId" });
             DropIndex("dbo.AspNetRoles", "RoleNameIndex");
-            DropIndex("dbo.Events", new[] { "activity_ActivityId" });
+            DropIndex("dbo.Events", new[] { "ActivityId" });
             DropTable("dbo.AspNetUserLogins");
             DropTable("dbo.AspNetUserClaims");
             DropTable("dbo.AspNetUsers");

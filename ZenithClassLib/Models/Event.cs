@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace ZenithDataLib.Models
 {
@@ -9,8 +10,10 @@ namespace ZenithDataLib.Models
         public DateTime DateTo { get; set; }
         public string EventMadeBy { get; set; }
         public bool IsActive { get; set; }
+        
+        public int ActivityId { get; set; }
+        public Activity Activity { get; set; }
 
-        public Activity activity { get; set; }
         public DateTime CreationDate { get; set; }
     }
 }

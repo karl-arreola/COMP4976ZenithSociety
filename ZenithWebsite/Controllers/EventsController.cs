@@ -17,7 +17,8 @@ namespace ZenithWebsite.Controllers
         // GET: Events
         public ActionResult Index()
         {
-            return View(db.Event.ToList());
+            var events = db.Event.Include(a => a.Activity);
+            return View(events.ToList());
         }
 
         // GET: Events/Details/5
@@ -38,6 +39,7 @@ namespace ZenithWebsite.Controllers
         // GET: Events/Create
         public ActionResult Create()
         {
+            ViewBag.ActivityId = new SelectList(db.Activity, "ActivityId", "ActivityDescription");
             return View();
         }
 
@@ -46,7 +48,7 @@ namespace ZenithWebsite.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "EventId,DateFrom,DateTo,EventMadeBy,IsActive,CreationDate,activity")] Event @event)
+        public ActionResult Create([Bind(Include = "EventId,DateFrom,DateTo,EventMadeBy,IsActive,ActivityId,CreationDate")] Event @event)
         {
             if (ModelState.IsValid)
             {
@@ -55,6 +57,7 @@ namespace ZenithWebsite.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.ActivityId = new SelectList(db.Activity, "ActivityId", "ActivityDescription", @event.ActivityId);
             return View(@event);
         }
 
@@ -70,6 +73,7 @@ namespace ZenithWebsite.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.ActivityId = new SelectList(db.Activity, "ActivityId", "ActivityDescription", @event.ActivityId);
             return View(@event);
         }
 
@@ -78,7 +82,7 @@ namespace ZenithWebsite.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "EventId,DateFrom,DateTo,EventMadeBy,IsActive,CreationDate,activity")] Event @event)
+        public ActionResult Edit([Bind(Include = "EventId,DateFrom,DateTo,EventMadeBy,IsActive,ActivityId,CreationDate")] Event @event)
         {
             if (ModelState.IsValid)
             {
@@ -86,6 +90,7 @@ namespace ZenithWebsite.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.ActivityId = new SelectList(db.Activity, "ActivityId", "ActivityDescription", @event.ActivityId);
             return View(@event);
         }
 

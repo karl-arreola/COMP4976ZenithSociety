@@ -119,6 +119,5 @@ C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976Zenit
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithClassLib\bin\Debug\System.Web.WebPages.xml
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithClassLib\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithClassLib\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithClassLib\obj\Debug\ZenithClassLib.csprojResolveAssemblyReference.cache
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithClassLib\obj\Debug\ZenithClassLib.dll
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithClassLib\obj\Debug\ZenithClassLib.pdb
