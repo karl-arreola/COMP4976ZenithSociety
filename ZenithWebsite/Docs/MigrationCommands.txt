@@ -1,0 +1,12 @@
+﻿Installations
+-Install-Package Microsoft.Owin.Security
+-Install-Package Microsoft.AspNet.Identity.EntityFramework
+-Install-Package Microsoft.AspNet.Mvc
+-Install-Package EntityFramework
+
+Migrations
+Enable-Migrations -ContextTypeName ApplicationDbContext -MigrationsDirectory Migrations\ZenithMigrations -ProjectName ZenithWebsite-ContextProjectName ZenithClassLib
+
+add-migration -ConfigurationTypeName ZenithWebsite.Migrations.ZenithMigrations.Configuration "FirstMigrations"
+
+update-database -ConfigurationTypeName ZenithWebsite.Migrations.ZenithMigrations.Configuration
