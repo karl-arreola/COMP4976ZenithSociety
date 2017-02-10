@@ -204,10 +204,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\AccountViewModels.cs" />
     <Compile Include="Migrations\ZenithMigrations\201702092244562_FirstMigrations.cs" />
     <Compile Include="Migrations\ZenithMigrations\201702092244562_FirstMigrations.Designer.cs">
       <DependentUpon>201702092244562_FirstMigrations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\ZenithMigrations\201702100457599_FirstNameLastNameUserName.cs" />
+    <Compile Include="Migrations\ZenithMigrations\201702100457599_FirstNameLastNameUserName.Designer.cs">
+      <DependentUpon>201702100457599_FirstNameLastNameUserName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\ZenithMigrations\201702100517399_UserNameUpdate.cs" />
+    <Compile Include="Migrations\ZenithMigrations\201702100517399_UserNameUpdate.Designer.cs">
+      <DependentUpon>201702100517399_UserNameUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\ZenithMigrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -294,15 +301,21 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ZenithClassLib\ZenithDataLib.csproj">
-      <Project>{3B06E0CC-0AB5-4615-AED8-BADA4BC142BC}</Project>
-      <Name>ZenithDataLib</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Migrations\ZenithMigrations\201702092244562_FirstMigrations.resx">
       <DependentUpon>201702092244562_FirstMigrations.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\ZenithMigrations\201702100457599_FirstNameLastNameUserName.resx">
+      <DependentUpon>201702100457599_FirstNameLastNameUserName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\ZenithMigrations\201702100517399_UserNameUpdate.resx">
+      <DependentUpon>201702100517399_UserNameUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ZenithClassLib\ZenithDataLib.csproj">
+      <Project>{3b06e0cc-0ab5-4615-aed8-bada4bc142bc}</Project>
+      <Name>ZenithDataLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

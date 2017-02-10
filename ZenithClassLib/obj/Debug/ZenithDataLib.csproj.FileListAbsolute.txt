@@ -1,6 +1,6 @@
-C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithClassLib\bin\Debug\ZenithClassLib.dll.config
-C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithClassLib\bin\Debug\ZenithClassLib.dll
-C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithClassLib\bin\Debug\ZenithClassLib.pdb
+C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithClassLib\bin\Debug\ZenithDataLib.dll.config
+C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithClassLib\bin\Debug\ZenithDataLib.dll
+C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithClassLib\bin\Debug\ZenithDataLib.pdb
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithClassLib\bin\Debug\EntityFramework.Core.dll
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithClassLib\bin\Debug\EntityFramework.dll
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithClassLib\bin\Debug\EntityFramework.Relational.dll
@@ -57,5 +57,5 @@ C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976Zenit
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithClassLib\bin\Debug\System.Web.WebPages.xml
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithClassLib\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithClassLib\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithClassLib\obj\Debug\ZenithClassLib.dll
-C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithClassLib\obj\Debug\ZenithClassLib.pdb
+C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithClassLib\obj\Debug\ZenithDataLib.dll
+C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithClassLib\obj\Debug\ZenithDataLib.pdb

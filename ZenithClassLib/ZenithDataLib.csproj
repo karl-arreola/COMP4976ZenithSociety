@@ -7,8 +7,8 @@
     <ProjectGuid>{3B06E0CC-0AB5-4615-AED8-BADA4BC142BC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ZenithClassLib</RootNamespace>
-    <AssemblyName>ZenithClassLib</AssemblyName>
+    <RootNamespace>ZenithDataLib</RootNamespace>
+    <AssemblyName>ZenithDataLib</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

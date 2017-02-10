@@ -170,9 +170,6 @@ C:\Users\Karl\Documents\Visual Studio 2015\Projects\COMP4976ZenithSociety\Zenith
 C:\Users\Karl\Documents\Visual Studio 2015\Projects\COMP4976ZenithSociety\ZenithWebsite\obj\Debug\ZenithWebsite.csproj.GenerateResource.Cache
 C:\Users\Karl\Documents\Visual Studio 2015\Projects\COMP4976ZenithSociety\ZenithWebsite\obj\Debug\ZenithWebsite.dll
 C:\Users\Karl\Documents\Visual Studio 2015\Projects\COMP4976ZenithSociety\ZenithWebsite\obj\Debug\ZenithWebsite.pdb
-C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\obj\Debug\ZenithWebsite.csprojResolveAssemblyReference.cache
-C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\obj\Debug\ZenithWebsite.Migrations.ZenithMigrations.FirstMigrations.resources
-C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\obj\Debug\ZenithWebsite.csproj.GenerateResource.Cache
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\bin\ApplicationInsights.config
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\bin\roslyn\csc.exe
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -223,8 +220,8 @@ C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976Zenit
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\bin\System.Web.WebPages.dll
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\bin\System.Web.WebPages.Razor.dll
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\bin\WebGrease.dll
-C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\bin\ZenithClassLib.dll
-C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\bin\ZenithClassLib.pdb
+C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\bin\ZenithDataLib.dll
+C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\bin\ZenithDataLib.pdb
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\bin\Microsoft.AI.DependencyCollector.xml
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\bin\Microsoft.AI.ServerTelemetryChannel.xml
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\bin\Microsoft.AI.Web.xml
@@ -254,5 +251,10 @@ C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976Zenit
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\obj\Debug\ZenithWebsite.csprojResolveAssemblyReference.cache
+C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\obj\Debug\ZenithWebsite.Migrations.ZenithMigrations.FirstMigrations.resources
+C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\obj\Debug\ZenithWebsite.csproj.GenerateResource.Cache
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\obj\Debug\ZenithWebsite.dll
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\obj\Debug\ZenithWebsite.pdb
+C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\obj\Debug\ZenithWebsite.Migrations.ZenithMigrations.FirstNameLastNameUserName.resources
+C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\obj\Debug\ZenithWebsite.Migrations.ZenithMigrations.UserNameUpdate.resources
