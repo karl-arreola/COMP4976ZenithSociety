@@ -10,6 +10,7 @@ using ZenithDataLib.Models;
 
 namespace ZenithWebsite.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class ActivitiesController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
@@ -34,7 +35,7 @@ namespace ZenithWebsite.Controllers
             }
             return View(activity);
         }
-
+        
         // GET: Activities/Create
         public ActionResult Create()
         {

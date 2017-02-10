@@ -28,11 +28,11 @@
         <td>
             @Html.DisplayFor(modelItem => item.CreationDate)
         </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ActivityId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ActivityId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ActivityId })
-        </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.ActivityId }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ActivityId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ActivityId })
+            </td>
     </tr>
 }
 
