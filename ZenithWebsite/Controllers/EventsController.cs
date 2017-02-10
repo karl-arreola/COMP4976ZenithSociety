@@ -49,8 +49,11 @@ namespace ZenithWebsite.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "EventId,DateFrom,DateTo,EventMadeBy,IsActive,ActivityId,CreationDate")] Event @event)
+        public ActionResult Create([Bind(Include = "EventId,DateFrom,DateTo,EventMadeBy,IsActive,ActivityId")] Event @event)
         {
+            @event.EventMadeBy = User.Identity.Name;
+            @event.CreationDate = DateTime.Now;
+
             if (ModelState.IsValid)
             {
                 db.Event.Add(@event);
@@ -88,6 +91,8 @@ namespace ZenithWebsite.Controllers
             if (ModelState.IsValid)
             {
                 db.Entry(@event).State = EntityState.Modified;
+                db.Entry(@event).Property("EventMadeBy").IsModified = false;
+                db.Entry(@event).Property("CreationDate").IsModified = false;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }

@@ -47,8 +47,10 @@ namespace ZenithWebsite.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ActivityId,ActivityDescription,CreationDate")] Activity activity)
+        public ActionResult Create([Bind(Include = "ActivityId,ActivityDescription")] Activity activity)
         {
+            activity.CreationDate = DateTime.Now;
+
             if (ModelState.IsValid)
             {
                 db.Activity.Add(activity);
@@ -79,11 +81,13 @@ namespace ZenithWebsite.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ActivityId,ActivityDescription,CreationDate")] Activity activity)
+        public ActionResult Edit([Bind(Include = "ActivityId,ActivityDescription")] Activity activity)
         {
+
             if (ModelState.IsValid)
             {
                 db.Entry(activity).State = EntityState.Modified;
+                db.Entry(activity).Property("CreationDate").IsModified = false;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
