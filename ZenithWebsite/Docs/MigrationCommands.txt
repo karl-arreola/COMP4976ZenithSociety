@@ -5,7 +5,7 @@
 -Install-Package EntityFramework
 
 Migrations
-Enable-Migrations -ContextTypeName ApplicationDbContext -MigrationsDirectory Migrations\ZenithMigrations -ProjectName ZenithWebsite-ContextProjectName ZenithClassLib
+Enable-Migrations -ContextTypeName ApplicationDbContext -MigrationsDirectory Migrations\ZenithMigrations -ProjectName ZenithWebsite-ContextProjectName ZenithDataLib
 
 add-migration -ConfigurationTypeName ZenithWebsite.Migrations.ZenithMigrations.Configuration "FirstMigrations"
 

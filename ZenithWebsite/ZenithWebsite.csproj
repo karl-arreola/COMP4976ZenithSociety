@@ -294,9 +294,9 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ZenithClassLib\ZenithClassLib.csproj">
+    <ProjectReference Include="..\ZenithClassLib\ZenithDataLib.csproj">
       <Project>{3B06E0CC-0AB5-4615-AED8-BADA4BC142BC}</Project>
-      <Name>ZenithClassLib</Name>
+      <Name>ZenithDataLib</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
