@@ -1,11 +1,62 @@
-﻿@{
+﻿@model IEnumerable<ZenithDataLib.Models.Event>
+
+@{
     ViewBag.Title = "Home Page";
+    HashSet<DayOfWeek> activeDays = new HashSet<DayOfWeek>();
 }
 
 <div class="jumbotron">
-    <h1>Zenith Society</h1>
+    <h2>Zenith Society</h2>
 </div>
 
-<div class="row">
-    
-</div>
+<table class="table">
+    <tr>
+        <th colspan="2">
+            Upcoming Activities
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    { 
+        if(item.IsActive)
+        {
+            activeDays.Add(item.DateFrom.DayOfWeek);
+        }
+    }
+
+    @foreach (var day in activeDays)
+    {
+        ViewBag.daySwitch = true;
+
+        foreach (var item in Model)
+        {
+            ViewBag.DateFrom = item.DateFrom.ToShortTimeString();
+            ViewBag.DateTo = item.DateTo.ToShortTimeString();
+            ViewBag.LongDate = item.DateFrom.ToLongDateString();
+
+            if (day == item.DateFrom.DayOfWeek && item.IsActive)
+            {
+                if (ViewBag.daySwitch)
+                {
+                    <tr>
+                        <td colspan="2">
+                            @ViewBag.LongDate
+                        </td>
+                    </tr>
+
+                    ViewBag.daySwitch = false;
+                }
+
+                <tr>
+                    <td>
+                        @ViewBag.DateFrom - @ViewBag.DateTo
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Activity.ActivityDescription)
+                    </td>
+                </tr>
+            }
+        }
+    }
+
+</table>
