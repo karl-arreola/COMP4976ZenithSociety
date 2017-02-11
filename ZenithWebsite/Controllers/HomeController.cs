@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using System.Web.Mvc;
 using ZenithDataLib.Models;
+using System.Data.Entity;
 
 namespace ZenithWebsite.Controllers
 {
@@ -13,8 +11,8 @@ namespace ZenithWebsite.Controllers
 
         public ActionResult Index()
         {
-            //var events = db.Event.Include(a => a.Activity);
-            return View();
+            var events = db.Event.Include(a => a.Activity);
+            return View(events.ToList());
         }
     }
 }
