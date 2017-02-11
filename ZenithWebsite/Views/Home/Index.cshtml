@@ -12,7 +12,7 @@
 <table class="table">
     <tr>
         <th colspan="2">
-            Upcoming Activities
+            Events of the week
         </th>
     </tr>
 
@@ -38,7 +38,7 @@
             {
                 if (ViewBag.daySwitch)
                 {
-                    <tr>
+                    <tr class="weekday">
                         <td colspan="2">
                             @ViewBag.LongDate
                         </td>
@@ -48,10 +48,10 @@
                 }
 
                 <tr>
-                    <td>
+                    <td width="30%">
                         @ViewBag.DateFrom - @ViewBag.DateTo
                     </td>
-                    <td>
+                    <td width="70%">
                         @Html.DisplayFor(modelItem => item.Activity.ActivityDescription)
                     </td>
                 </tr>

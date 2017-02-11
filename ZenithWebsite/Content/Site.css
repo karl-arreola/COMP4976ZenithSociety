@@ -1,4 +1,36 @@
-﻿body {
+﻿th {
+    text-align: center;
+    background-color: #003264;
+    color: white;
+}
+
+tr.weekday {
+    text-align: center;
+    background-color: #FFFFBE;
+}
+
+td {
+    border: 1px solid black;
+}
+
+div.navbar {
+    background-color: #003264;
+}
+
+div.navbar-inverse {
+    color: white;
+}
+
+div.navbar-collapse collapse {
+    color: white;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
 }
