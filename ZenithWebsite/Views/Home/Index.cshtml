@@ -3,6 +3,7 @@
 @{
     ViewBag.Title = "Home Page";
     HashSet<DayOfWeek> activeDays = new HashSet<DayOfWeek>();
+    List<ZenithDataLib.Models.Event> eventsThisWeek = new List<ZenithDataLib.Models.Event>();
 }
 
 <p>@ViewBag.Mon</p>
@@ -19,22 +20,71 @@
         </th>
     </tr>
 
+    <!--
+    Checks to see if the date falls in the current week, if it does adds that date to our List eventsThisWeek
+    Adds necessary Weekdays to a activeDays for iterating through
+    -->
     @foreach (var item in Model)
     {
-        var mon = DayOfWeek.Monday;
-        var sun = DayOfWeek.Sunday;
         var cur = DateTime.Now.DayOfWeek;
-        int startDif = mon - cur;
-        int endDif = mon - sun;
+        int startDif = 0;
+        int endDif = 0;
 
-        activeDays.Add(item.DateFrom.DayOfWeek);
+        if(cur == DayOfWeek.Monday)
+        {
+            startDif = 0;
+            endDif = 6;
+        }
+        else if(cur == DayOfWeek.Tuesday)
+        {
+            startDif = -1;
+            endDif = 5;
+        }
+        else if (cur == DayOfWeek.Wednesday)
+        {
+            startDif = -2;
+            endDif = 4;
+        }
+        else if (cur == DayOfWeek.Thursday)
+        {
+            startDif = -3;
+            endDif = 3;
+        }
+        else if (cur == DayOfWeek.Friday)
+        {
+            startDif = -4;
+            endDif = 2;
+        }
+        else if (cur == DayOfWeek.Saturday)
+        {
+            startDif = -5;
+            endDif = 1;
+        }
+        else if (cur == DayOfWeek.Sunday)
+        {
+            startDif = -6;
+            endDif = 0;
+        }
+
+        DateTime curDate = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 0, 0, 0);
+        DateTime eventDate = new DateTime(item.DateFrom.Year, item.DateFrom.Month, item.DateFrom.Day, 0, 0, 0);
+
+        DateTime startDate = curDate.AddDays(startDif);
+        DateTime endDate = curDate.AddDays(endDif);
+        endDate = endDate.AddSeconds(-1);
+
+        if (DateTime.Compare(eventDate, curDate.AddDays(startDif)) >= 0 && DateTime.Compare(eventDate, curDate.AddDays(endDif)) <= 0)
+        {
+            eventsThisWeek.Add(item);
+            activeDays.Add(item.DateFrom.DayOfWeek);
+        }
     }
 
     @foreach (var day in activeDays)
     {
         ViewBag.daySwitch = true;
 
-        foreach (var item in Model)
+        foreach (var item in eventsThisWeek)
         {
             ViewBag.DateFrom = item.DateFrom.ToShortTimeString();
             ViewBag.DateTo = item.DateTo.ToShortTimeString();
