@@ -21,7 +21,7 @@ namespace ZenithWebsite.Migrations.ZenithMigrations
         {
             context.Activity.AddOrUpdate(c => c.ActivityDescription, getActivity());
             context.SaveChanges();
-            context.Event.AddOrUpdate(p => p.EventId, getEvent(context));
+            context.Event.AddOrUpdate(p => p.CreationDate, getEvent(context));
             context.SaveChanges();
 
             createRoles(context);
@@ -98,7 +98,7 @@ namespace ZenithWebsite.Migrations.ZenithMigrations
                     EventMadeBy = "a",
                     IsActive = true,
                     ActivityId = context.Activity.FirstOrDefault(c => c.ActivityDescription ==  "Ski Tournament").ActivityId,
-                    CreationDate = new DateTime(2017, 2, 9)
+                    CreationDate = new DateTime(2017, 2, 9, 0, 0, 1)
                 },
                 new Event
                 { DateFrom = new DateTime(2017, 2, 10, 14, 0, 0),
@@ -106,7 +106,7 @@ namespace ZenithWebsite.Migrations.ZenithMigrations
                     EventMadeBy = "a",
                     IsActive = true,
                     ActivityId = context.Activity.FirstOrDefault(c => c.ActivityDescription ==  "Triathalon").ActivityId,
-                    CreationDate = new DateTime(2017, 2, 9)
+                    CreationDate = new DateTime(2017, 2, 9, 0, 0, 2)
                 },
                 new Event
                 { DateFrom = new DateTime(2017, 2, 11, 9, 0, 0),
@@ -114,7 +114,7 @@ namespace ZenithWebsite.Migrations.ZenithMigrations
                     EventMadeBy = "a",
                     IsActive = true,
                     ActivityId = context.Activity.FirstOrDefault(c => c.ActivityDescription ==  "Biking Race").ActivityId,
-                    CreationDate = new DateTime(2017, 2, 9)
+                    CreationDate = new DateTime(2017, 2, 9, 0, 0, 3)
                 },
                 new Event
                 { DateFrom = new DateTime(2017, 2, 11, 14, 0, 0),
@@ -122,7 +122,7 @@ namespace ZenithWebsite.Migrations.ZenithMigrations
                     EventMadeBy = "Jim",
                     IsActive = true,
                     ActivityId = context.Activity.FirstOrDefault(c => c.ActivityDescription ==  "Basketball Game").ActivityId,
-                    CreationDate = new DateTime(2017, 2, 10)
+                    CreationDate = new DateTime(2017, 2, 10, 0, 0, 4)
                 },
                 new Event
                 { DateFrom = new DateTime(2017, 2, 11, 9, 0, 0),
@@ -130,7 +130,7 @@ namespace ZenithWebsite.Migrations.ZenithMigrations
                     EventMadeBy = "Sara",
                     IsActive = true,
                     ActivityId = context.Activity.FirstOrDefault(c => c.ActivityDescription ==  "Soccer Game").ActivityId,
-                    CreationDate = new DateTime(2017, 2, 10)
+                    CreationDate = new DateTime(2017, 2, 10, 0, 0, 5)
                 },
                 new Event
                 { DateFrom = new DateTime(2017, 2, 12, 14, 0, 0),
@@ -138,7 +138,7 @@ namespace ZenithWebsite.Migrations.ZenithMigrations
                     EventMadeBy = "a",
                     IsActive = true,
                     ActivityId = context.Activity.FirstOrDefault(c => c.ActivityDescription ==  "Triathalon").ActivityId,
-                    CreationDate = new DateTime(2017, 2, 11)
+                    CreationDate = new DateTime(2017, 2, 11, 0, 0, 6)
                 },
                 new Event
                 { DateFrom = new DateTime(2017, 2, 13, 9, 0, 0),
@@ -146,7 +146,7 @@ namespace ZenithWebsite.Migrations.ZenithMigrations
                     EventMadeBy = "Sally",
                     IsActive = false,
                     ActivityId = context.Activity.FirstOrDefault(c => c.ActivityDescription ==  "Snowboard Tournament").ActivityId,
-                    CreationDate = new DateTime(2017, 2, 11)
+                    CreationDate = new DateTime(2017, 2, 11, 0, 0, 7)
                 },
                 new Event
                 { DateFrom = new DateTime(2017, 2, 13, 14, 0, 0),
@@ -154,7 +154,7 @@ namespace ZenithWebsite.Migrations.ZenithMigrations
                     EventMadeBy = "Jordan",
                     IsActive = false,
                     ActivityId = context.Activity.FirstOrDefault(c => c.ActivityDescription ==  "Triathalon").ActivityId,
-                    CreationDate = new DateTime(2017, 2, 11)
+                    CreationDate = new DateTime(2017, 2, 11, 0, 0, 8)
                 },
                 new Event
                 { DateFrom = new DateTime(2017, 2, 14, 9, 0, 0),
@@ -162,7 +162,7 @@ namespace ZenithWebsite.Migrations.ZenithMigrations
                     EventMadeBy = "Sally",
                     IsActive = false,
                     ActivityId = context.Activity.FirstOrDefault(c => c.ActivityDescription ==  "Basketball Game").ActivityId,
-                    CreationDate = new DateTime(2017, 2, 12)
+                    CreationDate = new DateTime(2017, 2, 12, 0, 0, 9)
                 },
                 new Event
                 { DateFrom = new DateTime(2017, 2, 15, 14, 0, 0),
@@ -170,7 +170,7 @@ namespace ZenithWebsite.Migrations.ZenithMigrations
                     EventMadeBy = "Jordan",
                     IsActive = false,
                     ActivityId = context.Activity.FirstOrDefault(c => c.ActivityDescription ==  "Soccer Game").ActivityId,
-                    CreationDate = new DateTime(2017, 2, 12)
+                    CreationDate = new DateTime(2017, 2, 12, 0, 0, 10)
                 }
             };
 
