@@ -1,10 +1,10 @@
 ﻿@model ZenithDataLib.Models.Event
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Event Details";
 }
 
-<h2>Details</h2>
+<h2>Event - @Html.DisplayFor(model => model.Activity.ActivityDescription)</h2>
 
 <div>
     <h4>Event</h4>

@@ -1,10 +1,10 @@
 ﻿@model ZenithDataLib.Models.Event
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Edit Event";
 }
 
-<h2>Edit</h2>
+<h2>Edit - @Html.DisplayFor(model => model.Activity.ActivityDescription)</h2>
 
 
 @using (Html.BeginForm())
