@@ -26,11 +26,8 @@
         var cur = DateTime.Now.DayOfWeek;
         int startDif = mon - cur;
         int endDif = mon - sun;
-        
-        if (item.IsActive && item.DateFrom.Date >= DateTime.Now.AddDays(startDif).Date && item.DateFrom.Date <= DateTime.Now.AddDays(endDif).Date)
-        {
-            activeDays.Add(item.DateFrom.DayOfWeek);
-        }
+
+        activeDays.Add(item.DateFrom.DayOfWeek);
     }
 
     @foreach (var day in activeDays)
