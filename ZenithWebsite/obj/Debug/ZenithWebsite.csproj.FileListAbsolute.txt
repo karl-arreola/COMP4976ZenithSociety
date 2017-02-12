@@ -177,3 +177,4 @@ C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976Zenit
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\obj\Debug\ZenithWebsite.dll
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\obj\Debug\ZenithWebsite.pdb
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\obj\Debug\ZenithWebsite.Migrations.ZenithMigrations.MoreSeededData.resources
+C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithWebsite\obj\Debug\ZenithWebsite.Migrations.ZenithMigrations.RequiredFields.resources
