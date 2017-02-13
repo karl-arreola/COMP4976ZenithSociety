@@ -57,7 +57,6 @@ C:\Users\Karl\Documents\Visual Studio 2015\Projects\COMP4976ZenithSociety\Zenith
 C:\Users\Karl\Documents\Visual Studio 2015\Projects\COMP4976ZenithSociety\ZenithClassLib\bin\Debug\System.Web.WebPages.xml
 C:\Users\Karl\Documents\Visual Studio 2015\Projects\COMP4976ZenithSociety\ZenithClassLib\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\Karl\Documents\Visual Studio 2015\Projects\COMP4976ZenithSociety\ZenithClassLib\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Users\Karl\Documents\Visual Studio 2015\Projects\COMP4976ZenithSociety\ZenithClassLib\obj\Debug\ZenithDataLib.csprojResolveAssemblyReference.cache
 C:\Users\Karl\Documents\Visual Studio 2015\Projects\COMP4976ZenithSociety\ZenithClassLib\obj\Debug\ZenithDataLib.dll
 C:\Users\Karl\Documents\Visual Studio 2015\Projects\COMP4976ZenithSociety\ZenithClassLib\obj\Debug\ZenithDataLib.pdb
 C:\Users\mr\Documents\BCIT Term 4\COMP4976 - Asp.net\AssignmentOne\COMP4976ZenithSociety\ZenithClassLib\bin\Debug\ZenithDataLib.dll.config
