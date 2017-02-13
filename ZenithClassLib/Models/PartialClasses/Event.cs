@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ZenithDataLib.Models.CutomValidations;
 
-namespace ZenithDataLib.Models.PartialClasses
+namespace ZenithDataLib.Models
 {
     [MetadataType(typeof(EventMetadata))]
     public partial class Event { }
